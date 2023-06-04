@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid</title>
+        <style>
+            .container {
+                display: grid;
+                width: max-content;
+                grid-template-columns: 4fr 4fr 4fr 4fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                align-items: center;
+                text-align: center;
+                gap: 20px 10px;
+                grid-auto-flow: column;
+                grid-auto-flow: row;
+                grid-column: initial;
+                justify-content: center;
+                align-content: center;
+                justify-items: center;
+                justify-self: center;
+                padding-left: 20px;
+                padding-top: 60px;
+            }
+            .h1 {
+                text-align: center;
+                margin-left: 50px;
+                padding-left: 300px;
+                width: 600px;
+                height: 10px;
+                justify-content: center;
+            }
+            .gradiente {
+                background: linear-gradient(45deg, #FFEA20, #8DCBE6, #9DF1DF, #E3F6FF);
+                background-size: 300% 300%;
+                animation: colors 10s ease infinite alternate;
+            }
+            @keyframes colors {
+                0%{
+                    background-position: 0% 50%;
+                }
+                50%{
+                    background-position: 100% 50%;
+                }
+                100%{
+                    background-position: 0% 50%;
+                }
+            }
+
+        </style>
+    </head>
+    <body class="gradiente">
+        <div class="h1">
+            <h1>Álbum de 10 lugares mais belos do mundo</h1>
+        </div>
+            <div class="container">
+            <div><img src="C:\Users\FAMILIA_AMARAL\Documents\Mentoria_descodificadas_html\Tarefa12_Grid\img1.jpeg" alt="Imagem1"></div>
+            <div><img src="C:\Users\FAMILIA_AMARAL\Documents\Mentoria_descodificadas_html\Tarefa12_Grid\img2.jpeg" alt="Imagem2"></div>
+            <div><img src="C:\Users\FAMILIA_AMARAL\Documents\Mentoria_descodificadas_html\Tarefa12_Grid\img3.jpeg" alt="Imagem3"></div>
+            <div><img src="C:\Users\FAMILIA_AMARAL\Documents\Mentoria_descodificadas_html\Tarefa12_Grid\img4.jpeg" alt="Imagem4"></div>
+            <div><img src="C:\Users\FAMILIA_AMARAL\Documents\Mentoria_descodificadas_html\Tarefa12_Grid\img5.jpeg" alt="Imagem5"></div>
+            <div><img src="C:\Users\FAMILIA_AMARAL\Documents\Mentoria_descodificadas_html\Tarefa12_Grid\img6.jpeg" alt="Imagem6"></div>
+            <div><img src="C:\Users\FAMILIA_AMARAL\Documents\Mentoria_descodificadas_html\Tarefa12_Grid\img7.jpeg" alt="Imagem7"></div>
+            <div><img src="C:\Users\FAMILIA_AMARAL\Documents\Mentoria_descodificadas_html\Tarefa12_Grid\img8.jpeg" alt="Imagem8"></div>
+            <div><img src="C:\Users\FAMILIA_AMARAL\Documents\Mentoria_descodificadas_html\Tarefa12_Grid\img9.jpeg" alt="Imagem9"></div>
+            <div><img src="C:\Users\FAMILIA_AMARAL\Documents\Mentoria_descodificadas_html\Tarefa12_Grid\img10.jpeg" alt="Imagem10"></div>
+        </div>
+    </body>
+</html>
