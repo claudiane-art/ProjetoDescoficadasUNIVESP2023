@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis JS</title>
+    <style>
+        .gradiente {
+            margin: 200px 500px;
+            background: linear-gradient(10deg, #eeaeca, #b3e3e7, #98d0db);
+            background-size: 50% 50%;
+            animation: colors 5s ease infinite alternate;
+            }
+            @keyframes colors {
+                15%{
+                    background-position: 15% 29%;
+                }
+                29%{
+                    background-position: 29% 100%;
+                }
+                100%{
+                    background-position: 100% 15%;
+                }           
+            }
+        
+    </style>
+</head>
+<body class="gradiente">
+    <h1>Atividade 15 - Variáveis</h1>
+    <h3>Introdução ao Javascript com a Descodificadas - Univesp</h3>
+    <p>By Claudiane Fátima da Silva Amaral - Trilha I</p>
+    <script>
+        setTimeout(function(){
+            alert('Página carregada com sucesso!');
+        },400);
+    </script>
+</body>
+</html>
